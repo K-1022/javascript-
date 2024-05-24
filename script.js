@@ -13,6 +13,6 @@ for (let i = 0; i <= 2; i++) {
   console.log(name + "は税込み" + total + "円です。");
 
   if (total >= 1000) {
-    console.log(name + "高いので買うのをやめます。");
+    console.log(`${name}高いので買うのをやめます。`);
   }
 }
