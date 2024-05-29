@@ -5,6 +5,6 @@ btn.addEventListener("click", () => {
   console.log(`${name}は税込み${total}円です。`);
 
   if (price >= 1000) {
-    console.log(`${total}円は高いので買うのをやめます。`);
+    console.log(`${name}は高いので買うのをやめます。`);
   }
 });
