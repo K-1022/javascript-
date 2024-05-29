@@ -4,7 +4,7 @@ btn.addEventListener("click", () => {
   let total = price * 1.08;
   console.log(`${name}は税込み${total}円です。`);
 
-  if (price >= 1000) {
+  if (total >= 1000) {
     console.log(`${name}は高いので買うのをやめます。`);
   }
 });
