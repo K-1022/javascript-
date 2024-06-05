@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <title>応用</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form name="product">
       <label>名前：<input type="text" name="productName" /></label>
+
+      <div id="productNameError"></div>
       <br />
       <label>価格：<input type="text" name="productPrice" /></label>
+
+      <div id="productPriceError"></div>
     </form>
     <br />
     <button id="btn">買い物</button>
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- - productName の 次に productNameError という id の<div>を作成する
+  - productPrice の次に productPriceError という id の<div>を作成する
+  - productNameError と productPriceError に表示される文字は赤になるように CSS を作成する
+  - 「買い物」ボタン押下時に、下記バリデーションが行われるようにする
+    - productName フォーム: 未入力チェック
+      - エラーの場合は、validateError に「名前を入力してください」と表示する
+    - productPrice フォーム: 未入力チェック
+      - エラーの場合は、validateError に「価格を入力してください」と表示する
+  - それぞれのバリデーションの結果は、errorObj という Object に代入する（true/false）
+  - バリデーションエラーがない場合のみ、税込み価格の計算を行う -->
